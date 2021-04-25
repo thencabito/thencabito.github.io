@@ -1,0 +1,22 @@
+.content { 
+    height: 100%;
+    width: 100%; 
+}
+
+.content, .division_1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.division_1 { 
+    height: 30px;
+}
+
+.division_1_1 { 
+    padding: 14px 12px;
+}
+
+/*	
+ 
+*/
