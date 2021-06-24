@@ -37,6 +37,7 @@
 	top: 26px;
     background: #fff;
 }
+#textBox{ z-index:1000; }
 .in_g {
 	width: 578px;
     height: 42px;

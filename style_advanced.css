@@ -93,7 +93,7 @@ input[type=text] {
   border-top: 1px solid #c0c0c0;
   font-size: 13px;
   position: absolute;
-  
+  z-index:1000;   
 }
 
 .division_4_3 { 
@@ -294,7 +294,7 @@ span{
 }
 
 .division_9 { 
-    height: 280px;
+    height: 455px;
     width: auto;
     display: block;
     font-family: arial,sans-serif;
@@ -336,11 +336,10 @@ span{
 
 .division_10_2 { 
     padding: 6px 182px;
-    position: absolute;
 }
 
 .division_10_3 { 
-    padding: 15px 769px;
+    padding: 3px 769px;
     height: 30px;
     width: 370px;
     font-size: 11px;
@@ -394,7 +393,7 @@ span{
     position: absolute;
 }
 
-.division_11_3, .division_12_3, .division_13_3, .division_14_3, .division_15_3, .division_16_3, .division_17_3 { 
+.division_11_3, .division_12_3, .division_15_3, .division_16_3, .division_17_3 { 
     padding: 15px 769px;
     height: 30px;
     width: 370px;
@@ -403,6 +402,90 @@ span{
     font-family: arial,sans-serif;
     position: absolute;
 
+}
+
+.division_13_3 { 
+    padding: 8px 769px;
+    height: 30px;
+    width: 370px;
+    font-size: 11px;
+    color: #555;
+    font-family: arial,sans-serif;
+    position: absolute;
+}
+
+.division_14_3 { 
+    padding: 9px 769px;
+    height: 30px;
+    width: 370px;
+    font-size: 11px;
+    color: #555;
+    font-family: arial,sans-serif;
+    position: absolute;
+}
+
+select {
+    width: 572px;
+    height: 29px;
+    text-align: left;
+    text-indent: 4px;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 27px;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    font-family: arial,sans-serif;
+    position: absolute;
+    z-index: 9;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#safe {
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    padding-top: 13px;
+    position: absolute;
+    text-decoration: none;
+}
+
+#safe:hover {
+    text-decoration: underline;
+}
+
+.division_18{
+    padding: 342px 621px;
+    position: absolute;
+}
+#busqueda {
+    height: 30px;
+    width: 131px;
+    background-color: #4d90fe;
+    float: right;
+    margin: 10px 0;
+    padding: 0 11px;
+    box-shadow: none;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+    align-items: flex-start;
+    font-family: arial,sans-serif;
 }
 /*	
  border: 1px solid #d9d9d9;
