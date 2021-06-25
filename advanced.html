@@ -10,13 +10,14 @@
             <div class="division_1">
                 <div class="division_1_1">
                     <img src="google_logo.png" alt="Google_logo" width="73.5" height="23.5">
+                    <a id="main_search" href="index.html">  Google Search</a>
                 </div>
             </div>
             <div class="division_2">
                 <label>Búsqueda avanzada</label>
             </div>
-            <div class="division_3">
-                <form action="/search" method="GET" name="f">   
+            <form action="https://google.com/search" method="GET" name="f">  
+                <div class="division_3">
                     <div class="division_3_1">
                         <label>Mostrar páginas que contengan...</label>
                     </div>
@@ -42,7 +43,7 @@
                             <label> esta palabra o frase exactas:</label>
                         </div>
                         <div class="division_5_2">
-                            <input value="" autofocus="autofocus" name="as_q" type="text">
+                            <input value="" autofocus="autofocus" name="as_epq" type="text">
                         </div>
                         <div class="division_5_3">
                             <label>Ingresa las palabras exactas entre comillas: </label>
@@ -54,7 +55,7 @@
                             <label> cualquiera de estas palabras:</label>
                         </div>
                         <div class="division_6_2">
-                            <input value="" autofocus="autofocus" name="as_q" type="text">
+                            <input value="" autofocus="autofocus" name="as_oq" type="text">
                         </div>
                         <div class="division_6_3">
                             <label>Ingresa</label>
@@ -68,7 +69,7 @@
                             <label> ninguna de estas palabras:</label>
                         </div>
                         <div class="division_7_2">
-                            <input value="" autofocus="autofocus" name="as_q" type="text">
+                            <input value="" autofocus="autofocus" name="as_eq" type="text">
                         </div>
                         <div class="division_7_3">
                             <label>Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: </label>
@@ -81,13 +82,13 @@
                         </div>
                         <div class="division_8_2">
                             <div class="division_8_2_1">
-                                <input id="input1" value="" autofocus="autofocus" name="as_q" type="text">
+                                <input id="input1" value="" autofocus="autofocus" name="as_nlo" type="text">
                             </div>
                             <div class="division_8_2_2">
                                 <label>al</label>
                             </div>
                             <div class="division_8_2_3">
-                                <input id="input1" value="" autofocus="autofocus" name="as_q" type="text">
+                                <input id="input1" value="" autofocus="autofocus" name="as_nhi" type="text">
                             </div>
                         </div>
                         <div class="division_8_3">
@@ -95,10 +96,8 @@
                             <label id="label1">10..35 lb, $300..$500, 2010..2011. </label>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="division_9">
-                <form action="/search" method="GET" name="f">   
+                </div>
+                <div class="division_9"> 
                     <div class="division_9_1">
                         <label>Luego restringe tus resultados por...</label>
                     </div>
@@ -109,15 +108,16 @@
                             <label> idioma:</label>
                         </div>
                         <div class="division_10_2">
-                          <select name="select" id="sub-menu">
-                            <option value="0">cualquier idioma</option>
-                            <option value="1">Español</option>
-                            <option value="2">Ingles</option>
-                            <option value="3">Portugues</option>
-                            <option value="4">Aleman</option>
-                            <option value="5">Japones</option>
-                            <option value="6">Chino</option>
+                          <select name="lr" id="sub-menu">
+                            <option value="" lr="0">cualquier idioma</option >
+                            <option value="lang_es" lr="1">Español</option>
+                            <option value="lang_en" lr="2">Ingles</option>
+                            <option value="lang_pt" lr="3">Portugues</option>
+                            <option value="lang_de" lr="4">Aleman</option>
+                            <option value="lang_ja" lr="5">Japones</option>
+                            <option value="lang_zh-CN" lr="6">Chino</option>
                           </select>
+
                         </div>
                         <div class="division_10_3">
                             <label>Busca páginas en el idioma que seleccionas. </label>
@@ -128,14 +128,14 @@
                             <label> región:</label>
                         </div>
                         <div class="division_11_2">
-                            <select name="select" id="sub-menu">
-                                <option value="0">cualquier región</option>
-                                <option value="1">Colombia</option>
-                                <option value="2">Estados Unidos</option>
-                                <option value="3">Brasil</option>
-                                <option value="4">Alemania</option>
-                                <option value="5">Japon</option>
-                                <option value="6">China</option>
+                            <select name="cr" id="sub-menu">
+                                <option value="" cr="0">cualquier región</option>
+                                <option value="countryCO" cr="1">Colombia</option>
+                                <option value="countryUS" cr="2">Estados Unidos</option>
+                                <option value="countryBR" cr="3">Brasil</option>
+                                <option value="countryDE" cr="4">Alemania</option>
+                                <option value="countryJP" cr="5">Japon</option>
+                                <option value="countryCN" cr="6">China</option>
                             </select>
                         </div>
                         <div class="division_11_3">
@@ -147,12 +147,12 @@
                             <label> última actualización:</label>
                         </div>
                         <div class="division_12_2">
-                            <select name="select" id="sub-menu">
-                                <option value="0">en cualquier momento</option>
-                                <option value="1">las últimas 24 horas</option>
-                                <option value="2">la última semana</option>
-                                <option value="3">el último mes</option>
-                                <option value="4">el último año</option>
+                            <select name="as_qdr" id="sub-menu">
+                                <option value="all" as_qdr="0">en cualquier momento</option>
+                                <option value="d" as_qdr="1">las últimas 24 horas</option>
+                                <option value="w" as_qdr="2">la última semana</option>
+                                <option value="m" as_qdr="3">el último mes</option>
+                                <option value="y" as_qdr="4">el último año</option>
                             </select>
                         </div>
                         <div class="division_12_3">
@@ -164,7 +164,7 @@
                             <label> sitio o dominio:</label>
                         </div>
                         <div class="division_13_2">
-                            <input value="" autofocus="autofocus" name="as_q" type="text">
+                            <input value="" autofocus="autofocus" name="as_sitesearch" type="text">
                         </div>
                         <div class="division_13_3">
                             <label>Realiza búsquedas en un sitio (como </label>
@@ -178,12 +178,12 @@
                             <label> términos que aparecen:</label>
                         </div>
                         <div class="division_14_2">
-                            <select name="select" id="sub-menu">
-                                <option value="0">En cualquier parte de la página</option>
-                                <option value="1">En el título de la página</option>
-                                <option value="2">En el texto de la página</option>
-                                <option value="3">En la URL de la página</option>
-                                <option value="4">En vinculos que te dirijan a la página</option>
+                            <select name="as_occt" id="sub-menu">
+                                <option value="any" as_occt="0">En cualquier parte de la página</option>
+                                <option value="title" as_occt="1">En el título de la página</option>
+                                <option value="body" as_occt="2">En el texto de la página</option>
+                                <option value="url" as_occt="3">En la URL de la página</option>
+                                <option value="links" as_occt="4">En vinculos que te dirijan a la página</option>
                             </select>
                         </div>
                         <div class="division_14_3">
@@ -193,9 +193,9 @@
                     <div class="division_15">
                             <a id = "safe" href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=es-419">SafeSearch</a>
                         <div class="division_15_2">
-                            <select name="select" id="sub-menu">
-                                <option value="0">Mostrar resultados explícitos</option>
-                                <option value="1">Ocultar resultados explícitos</option>
+                            <select name="safe" id="sub-menu">
+                                <option value="images" safe="0">Mostrar resultados explícitos</option>
+                                <option value="active" safe="1">Ocultar resultados explícitos</option>
                             </select>
                         </div>
                         <div class="division_15_3">
@@ -209,10 +209,10 @@
                             <label> tipo de archivo:</label>
                         </div>
                         <div class="division_16_2">
-                            <select name="select" id="sub-menu">
-                                <option value="0">Cualquier formato</option>
-                                <option value="1">Adobe acrobat PDF (.pdf)</option>
-                                <option value="2">Microsoft Excel (.xls)</option>
+                            <select name="as_filetype" id="sub-menu">
+                                <option value="" as_filetype="0">Cualquier formato</option>
+                                <option value="pdf" as_filetype="1">Adobe acrobat PDF (.pdf)</option>
+                                <option value="xls" as_filetype="2">Microsoft Excel (.xls)</option>
                             </select>
                         </div>
                         <div class="division_16_3">
@@ -224,9 +224,9 @@
                             <label> derechos de uso:</label>
                         </div>
                         <div class="division_17_2">
-                            <select name="select" id="sub-menu">
-                                <option value="0">Páginas cuyo uso no requiera de licencias</option>
-                                <option value="1">Páginas que se puedan usar o compartir libremente</option>
+                            <select name="tbs" id="sub-menu">
+                                <option value="" tbs="0">Páginas cuyo uso no requiera de licencias</option>
+                                <option value="f" tbs="1">Páginas que se puedan usar o compartir libremente</option>
                             </select>
                         </div>
                         <div class="division_17_3">
@@ -236,11 +236,20 @@
                     <div class="division_18">
                         <input id="busqueda" class="button" value="Búsqueda avanzada" type="submit">
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </body>
 </html>
 <!-- 
+
+            <div class="division_19">
+                <span>También puedes... </span>
+                <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=es-419">Buscar páginas similares a una URL</a>
+                <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=es-419">Buscar las páginas visitadas</a>
+                <a href="https://support.google.com/websearch?p=adv_operators&hl=es-419">Usar los operadores del cuadro de búsqueda</a>
+                <a href="https://www.google.com/preferences?hl=es-419">Personalizar la configuración de búsqueda</a>
+                
+            </div>
 
 -->
